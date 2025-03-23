@@ -4,7 +4,7 @@ CFLAGS = -Wall -std=c99
 
 # Rule for dynamic number targets
 %:
-	$(CC) $(CFLAGS) src/prog$*.c -o prog
+	$(CC) $(CFLAGS) src/$*.c -o prog
 
 # Phony target (to avoid conflicts with files named after numbers)
 .PHONY: all
